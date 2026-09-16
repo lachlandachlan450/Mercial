@@ -7,14 +7,14 @@
   <meta name="description" content="Mercial is a community working on AI safety. We run a remote research fellowship, hackathons and a hands-on technical bootcamp, open to anyone.">
   <link rel="canonical" href="https://mercial.uk/">
 
-  <!-- Link previews (Discord, WhatsApp, Substack, X). Update og:image if you
-       replace images/og.png. -->
+  <!-- Link previews (Slack, WhatsApp, Substack, X). Update og:image if you
+       replace images/og.png. URLs must be absolute for previews to work. -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mercial AI Safety Initiative">
   <meta property="og:title" content="Mercial AI Safety Initiative">
   <meta property="og:description" content="Mercial is a community working on AI safety. We run a remote research fellowship, hackathons and a hands-on technical bootcamp, open to anyone.">
   <meta property="og:url" content="https://mercial.uk/">
-  <meta property="og:image" content="images/og.png">
+  <meta property="og:image" content="https://mercial.uk/images/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -37,7 +37,6 @@
       <a href="events.html">Events</a>
       <a href="https://mercialais.substack.com">Blog</a>
       <a href="get-involved.html">Get Involved</a>
-      <a href="mentors.html">Mentor</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
@@ -49,8 +48,8 @@
   <div class="inner">
     <h1>How can we mitigate catastrophic risk from advanced AI?</h1>
     <p>The Mercial AI Safety Initiative is a community working on the technical and strategic problems of making powerful AI systems safe. We run a remote research fellowship, hackathons, and a hands-on upskilling bootcamp. All of them are open to anyone.</p>
-    <a class="button" href="get-involved.html">See our programmes</a>
-    <a class="button quiet" href="mentors.html">Mentor a fellow</a>
+    <a class="button" href="fellowship.html">Apply to the research fellowship</a>
+    <a class="button quiet" href="get-involved.html">See all our programmes</a>
   </div>
 </section>
 
@@ -59,15 +58,15 @@
   <div class="activities">
     <div class="activity">
       <h3>Research fellowship</h3>
-      <p>Small teams work on technical or conceptual problems in AI safety over a month-long remote fellowship, and produce a write-up, building real research experience. <a href="get-involved.html">Read More</a></p>
+      <p>Fellows work on a technical or conceptual problem in AI safety with a mentor over a month-long remote fellowship, and produce a write-up, building real research experience. <strong><a href="fellowship.html">Applications for the October cohort are open</a></strong>.</p>
     </div>
     <div class="activity">
       <h3>Hackathons</h3>
-      <p>Intensive weekend sprints, including the <a href = "https://apartresearch.com/sprints">Apart Research hackathons</a> — a fast way to try a research idea and see it through to a write-up. <a href="get-involved.html">Read More</a></p>
+      <p>Intensive weekend sprints, including the <a href="https://apartresearch.com/sprints">Apart Research hackathons</a> — a fast way to try a research idea and see it through to a write-up. <a href="events.html">Upcoming dates</a>.</p>
     </div>
     <div class="activity">
       <h3>Technical bootcamp</h3>
-      <p>An intensive upskilling programme built on the ARENA curriculum: transformer internals, mechanistic interpretability, RL and evals. <a href="get-involved.html">Read More</a></p>
+      <p>An intensive upskilling programme built on the ARENA curriculum: transformer internals, mechanistic interpretability, RL and evals. <a href="get-involved.html">Read more</a>.</p>
     </div>
   </div>
 
@@ -88,6 +87,7 @@
       <a href="events.html">Events</a>
       <a href="https://mercialais.substack.com">Blog</a>
       <a href="get-involved.html">Get Involved</a>
+      <a href="fellowship.html">Apply to the fellowship</a>
       <a href="mentors.html">Mentor</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -110,7 +110,7 @@
   if (!svg || !hero) return;
 
   var W = 1200, H = 480, gap = 46, len = 14;
-  var GOLD = "https://mercialais.substack.comb99a45", MUTED = "https://mercialais.substack.com8a6aa6";
+  var GOLD = "#b99a45", MUTED = "#8a6aa6";
   var TOUCH = 42;        /* marks this close to the pointer always react (SVG units) */
   var RADIUS = 120;      /* a few "keen" marks also react out to this distance */
   var KEEN = 0.18;       /* fraction of marks that are keen */

@@ -1,5 +1,5 @@
 /* ============================================================
-   Mercia AI Safety Initiative
+   Mercial AI Safety Initiative
    ------------------------------------------------------------
    CUSTOMISE HERE: colours, fonts and spacing all live in the
    variables below. Change a value once and it applies site-wide.
@@ -419,3 +419,60 @@ p, ul, ol { max-width: var(--measure); }
 }
 .criteria dd { margin: 0.35rem 0 1rem; }
 .criteria dd:last-child { margin-bottom: 0; }
+
+/* ---------- Breadcrumb (subpages reached from Get Involved) ---------- */
+
+.crumb { font-size: 0.9rem; color: #4a3f57; margin: 1.5rem 0 -0.25rem; }
+.crumb a { color: inherit; }
+.crumb span { margin: 0 0.35rem; }
+
+/* ---------- Fellowship streams (fellowship.html) ---------- */
+
+.stream {
+  max-width: var(--measure);
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--aubergine);
+  border-radius: 6px;
+}
+.stream-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+.stream-who { display: flex; align-items: center; gap: 1rem; }
+.stream-photo {
+  flex: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--lilac);
+}
+.stream-mentor { font-family: var(--font-display); font-size: 1.4rem; margin: 0; }
+.stream-affil { margin: 0.25rem 0 0; font-size: 0.95rem; color: #4a3f57; }
+.stream-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; max-width: 16rem; }
+.chip {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--aubergine-deep);
+  background: var(--lilac);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.15rem 0.65rem;
+  white-space: nowrap;
+}
+.capacity { flex-basis: 100%; font-size: 0.9rem; color: #4a3f57; }
+.stream .drop { max-width: none; }
+.stream .drop:last-of-type { border-bottom: 1px solid var(--line); }
+.fact-line { font-size: 0.95rem; color: #4a3f57; }
+.stream-apply { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem; }
+.apply-note { font-size: 0.9rem; color: #4a3f57; }
+@media (max-width: 480px) {
+  .stream-apply .button { width: 100%; }
+}
