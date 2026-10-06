@@ -185,6 +185,13 @@ p, ul, ol { max-width: var(--measure); }
 /* ---------- People ---------- */
 
 .people { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 2rem; margin-top: 2rem; }
+/* Grouped rows on the People page: each group gets its own heading and grid.
+   auto-fill (not auto-fit) keeps cards the same width in every row, even
+   when a group has fewer people than columns. */
+.people-group { margin-top: 3rem; }
+.people-group + .people-group { padding-top: 0.5rem; border-top: 1px solid var(--line); }
+.people-group h2 { margin-top: 1.5rem; }
+.people-group .people { margin-top: 1.25rem; }
 .person img, .person .placeholder {
   width: 100%;
   aspect-ratio: 1.5;
