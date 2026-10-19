@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research Fellowship — Mercial AI Safety Initiative</title>
-  <meta name="description" content="The Mercial research fellowship: a month working on an open problem in AI safety with a facilitator. Applications for the October cohort are closed.">
+  <meta name="description" content="The Mercial research fellowship: a month working on an open problem in AI safety with a facilitator. Applications for the November cohort close on 28 October.">
   <link rel="canonical" href="https://mercial.uk/fellowship.html">
 
   <!-- Link previews (Slack, WhatsApp, Substack, X). Update og:image if you
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mercial AI Safety Initiative">
   <meta property="og:title" content="Research Fellowship — Mercial AI Safety Initiative">
-  <meta property="og:description" content="A month working on an open problem in AI safety with a facilitator. Applications for the October cohort are closed.">
+  <meta property="og:description" content="A month working on an open problem in AI safety with a facilitator. Applications for the November cohort close on 28 October.">
   <meta property="og:url" content="https://mercial.uk/fellowship.html">
   <meta property="og:image" content="https://mercial.uk/images/og.png">
   <meta property="og:image:width" content="1200">
@@ -49,14 +49,14 @@
 
   <!-- ROUND STATUS. Update the dates each cohort. -->
   <div class="notice">
-    <p><strong>Research Fellowship 1 runs 1 October – 1 November.</strong> <strong>Applications are now closed.</strong> The details below are kept for reference. Dates for the next round will go out on the <a href="https://mercialais.substack.com">newsletter</a>. If you would like to supervise a fellow, <a href="facilitators.html">facilitator applications are open</a>.</p>
+    <p><strong>Research Fellowship 2 runs 1 November – 1 December.</strong> <strong>Applications are open until Wednesday 28 October.</strong> Offers go out shortly after the deadline.</p>
   </div>
 
   <h2>How it works</h2>
   <ol class="steps">
     <li>
       <h3>Pick a stream</h3>
-      <p>Read the three streams below. Each problem expands to show the full brief: the question, what you need coming in, and what you will have produced by the end.</p>
+      <p>Read the streams below. Each problem expands to show the full brief: the question, what you need coming in, and what you will have produced by the end.</p>
     </li>
     <li>
       <h3>Apply to it</h3>
@@ -77,137 +77,401 @@
 
   <!-- ============================================================
        STREAMS. One <section class="stream"> per facilitator.
-       Everything marked [REPLACE] is a placeholder. To add a problem,
-       copy one <details class="drop"> block. To point the apply
-       button at the form, change the href on the .button link.
+       To add a stream, copy a whole <section> block, give it a new
+       id (stream-firstname), and swap the photo, text and form link.
+       To add a problem, copy one <details class="drop"> block. To point
+       the apply button at the form, change the href on the .button link.
        ============================================================ -->
 
-  <section class="stream" id="stream-1">
+  <section class="stream" id="stream-jack">
     <div class="stream-head">
       <div class="stream-who">
-        <!-- Photo: square crop works best; swap the src for the real file -->
-        <img class="stream-photo" src="images/JamesPfp.jpg" alt="Photo of James">
+        <img class="stream-photo" src="images/JackPfp.jpeg" alt="Photo of Jack">
         <div>
-          <h3 class="stream-facilitator">James Sykes</h3>
-          <p class="stream-affil">Statistics PhD at Warwick</p>
+          <h3 class="stream-facilitator">Jack Lakkapragada</h3>
+          <p class="stream-affil">Independent researcher · SPAR fellow</p>
         </div>
       </div>
       <div class="stream-meta">
-        <span class="chip">Conceptual</span>
-        <span class="capacity">Taking 2–3 fellows</span>
+        <span class="chip">Technical</span>
       </div>
     </div>
 
     <details class="drop">
       <summary>
         <span>
-          <span class="drop-title">Why are the top AI labs all calling for a slowdown?</span>
-          <span class="teaser">Research this question and produce an in-depth article to persuade others of your view.</span>
+          <span class="drop-title">Why do agents collude?</span>
+          <span class="teaser">Work out what leads AI agents to coordinate outside their intended task boundaries.</span>
         </span>
       </summary>
       <div class="drop-body">
-        <p><strong>The problem.</strong> Write a report on what has changed in the AI landscape recently. This could include a risk report on GPT-6 Astra and an outline of what we can infer about the capabilities of OpenAI's new "internal model". Fellows could also cover the debate about LLMs' mathematical capabilities, including the many recent developments in this space (e.g. Navier-Stokes), as well as the Hugging Face incident and the subsequent response (e.g. the METR investigation and Amodei's "We Must Pace the Frontier"). As a main focus of the report, it would be valuable to investigate how close we are to recursive self-improvement and the resulting implications of this.</p>
-        <p><strong>You'll need.</strong> Good understanding of the overall AI landscape, and a desire to thoroughly investigate a problem, considering multiple different angles, to come to a well-reasoned conclusion. You should have excellent writing ability.</p>
+        <p><strong>The problem.</strong> We've seen AI agents use unexpected places to communicate and coordinate during tasks, including cases like DSEWiki. But what actually leads them to do this?</p>
+        <p>By collusion, we mean agents coordinating outside their intended task boundaries, such as sharing information they weren't supposed to share or using unexpected communication channels. Not all agent communication is collusion, and that's an important distinction we want to investigate.</p>
+        <p>In this project, we'll look at real agent interaction logs and investigate two main questions:</p>
+        <ol>
+          <li>What kinds of tasks or situations lead agents to collude?</li>
+          <li>Why do agents choose particular places or channels to communicate?</li>
+        </ol>
+        <p>We'll reconstruct specific cases, separate what the logs actually show from what we're inferring, and look for patterns across different tasks and environments. The goal is to better understand when and how agent collusion happens, what evidence supports those conclusions, and how these findings could help improve future agent safety evaluations.</p>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/WCqAXB5jtACEd5kV8">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
+  <section class="stream" id="stream-matthew">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/MatthewPfp.jpeg" alt="Photo of Matthew">
+        <div>
+          <h3 class="stream-facilitator">Matthew Southerby</h3>
+          <p class="stream-affil">Research physicist at UCL Hospitals · Independent researcher</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Technical</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">Applying Activation Verbalisers to assess model belief</span>
+          <span class="teaser">Can a base model be fine-tuned to read an instruct-tuned model's beliefs from its activations?</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> This project attempts to answer whether a base model can be fine-tuned on model activations from the instruct-tuned model to produce a reliable Activation Verbaliser (AV) with respect to agent belief. The main questions are:</p>
+        <ol>
+          <li>How well can the base model recover concepts from the instruct-tuned model?</li>
+          <li>Does fine-tuning the base model on synthetic data relating to an agent's belief translate to out-of-distribution scenarios and accurately trace the agent's belief?</li>
+          <li>How well does this belief reader generalise to tricky cases (e.g. theory of mind)?</li>
+        </ol>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/aGUiJmRuYBdQqZue7">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
+  <section class="stream" id="stream-sidar">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/SidarPfp.jpg" alt="Photo of Sidar">
+        <div>
+          <h3 class="stream-facilitator">Sidar Aslanoglu</h3>
+          <p class="stream-affil">SPAR fellow</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Conceptual</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">Threat modelling a war over Taiwan</span>
+          <span class="teaser">Build scenarios for a Chinese move against Taiwan and analyse what each one would do to AI chips and to compute governance.</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> Almost all of the world's cutting-edge chips are made in Taiwan. A blockade, a "quarantine" or an invasion would change both the pace of AI capabilities development and what an international compute governance regime can achieve. This project models such scenarios. It takes a net assessment approach to scenario modelling: laying out each side's incentives and capabilities, stating the assumptions before any conclusions, and building a small number of scenarios instead of a single probability. For each scenario, the fellow traces what happens to the supply of advanced chips and to the race between the US and China.</p>
+        <p><strong>First two weeks.</strong> Read the open wargaming and net assessment work on a Taiwan conflict, starting with the CSIS report <em>The First Battle of the Next War</em> (2023), and the reporting on where leading-edge chips are made. Pick two or three scenarios and write down the assumptions behind each one before modelling anything.</p>
+        <p><strong>You'll need.</strong> Context in AI safety or in international security, and at least one finished piece of analytical writing, of any length.</p>
+        <p class="fact-line"><strong>Commitment.</strong> ~4 hrs/week for 4 weeks &nbsp;·&nbsp; <strong>Write-up.</strong> A post setting out scenarios and what each would mean for AI chips and compute governance</p>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/FTfFhu3zM57QBTyy6">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
+  <section class="stream" id="stream-abeer">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/AbeerPfp.jpeg" alt="Photo of Abeer">
+        <div>
+          <h3 class="stream-facilitator">Abeer Sharma</h3>
+          <p class="stream-affil">Co-founder of AI Safety Hong Kong</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Conceptual</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">Middle power AI governance</span>
+          <span class="teaser">How countries that aren't building frontier models compete in AI, and how their contexts shape how they govern it.</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> AI safety is often discussed in terms of frontier models, but how AI is deployed and how it diffuses matters just as much. Most countries are not building frontier models, yet they are still racing to build AI capabilities in other ways, through adoption, infrastructure, and talent, while trying to carve out a niche and capture value from the AI supply chain.</p>
+        <p>This project facilitates fellow-led research into these less discussed questions, with attention to how the distinct traits and contexts of different regions shape how AI is governed. Fellows can choose their own angle, and work can be comparative, conceptual, or policy-oriented.</p>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/9ykWW1DPVGSybSGE6">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
+  <section class="stream" id="stream-daud">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/DaudPfp.jpg" alt="Photo of Daud">
+        <div>
+          <h3 class="stream-facilitator">Daud Hassan</h3>
+          <p class="stream-affil">Independent researcher</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Conceptual</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">How should we handle research done by AIs?</span>
+          <span class="teaser">What evidence should we require before trusting an AI-generated research claim?</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> What evidence should we require before trusting an AI-generated research claim? We'll explore practical checks for research produced by AI, including reference accuracy, reproducibility, and whether the conclusions follow from the results. Fellows will choose a focused question, test these checks on a small set of examples, and write up what they catch, what they miss, and where uncertainty remains.</p>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/tLXU1N6DvigP5EKE6">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
+  <section class="stream" id="stream-jeanne">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/JeannePfp.jpg" alt="Photo of Jeanne">
+        <div>
+          <h3 class="stream-facilitator">Jeanne Vincendeau</h3>
+          <p class="stream-affil">Researcher in political violence and AI governance</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Conceptual</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">The Taiwan question: forecasting and contending perspectives</span>
+          <span class="teaser">Map the actors, perspectives and AI dependencies behind tensions over Taiwan, and build an uncertainty-aware forecast.</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> Develop a grounded, uncertainty-aware assessment of the AI × Taiwan question by mapping the key actors, their capabilities and interests, and the historical events shaping current tensions. Use security analysis and forecasting methods to study how Chinese, US and Taiwanese perspectives shape interpretations and perceptions of risk, and find out how AI capabilities and dependencies affect security and escalation dynamics.</p>
+        <p><strong>The work.</strong></p>
+        <ul>
+          <li><em>Disentangle facts:</em> the landscape, actors, capabilities, interests, resources, dependencies and sources of mistrust; historical turning points, current developments and key uncertainties; AI-related strategic dependencies such as semiconductor supply chains and military AI applications.</li>
+          <li><em>Perspectives:</em> review opinion and attitudes in mainland China, Taiwan and the United States, and compare competing narratives, interpretations and assumptions about evidence and legitimacy.</li>
+          <li><em>A pluralist, grounded forecast:</em> assess escalation timelines and the likelihood of different scenarios, including maritime and air warfare, cyberattacks and nuclear escalation. Track uncertainty honestly: identify key indicators, pressure-test assumptions, and expose findings to local populations.</li>
+        </ul>
+        <p><strong>You'll need.</strong> Experience in, or an interest in learning, forecasting under uncertainty, security concepts and literature, and the context of Sino-US AI geopolitics. Knowledge of Chinese politics, culture and perspectives is a plus, as is openness to discussing epistemic incommensurability, hermeneutics and strategic narratives.</p>
+        <p><strong>About Jeanne.</strong> Jeanne is an interdisciplinary researcher at the intersection of political violence and AI governance, with recent projects on Sino-Western relations, concentration of power, and protest repression. Their central interest is sovereignty: how autonomy can be eroded or protected under different information systems, or when AI enters people's decisions, institutions and lives.</p>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/29cYfh5b2yjFfeds7">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
+  <section class="stream" id="stream-ina">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/InaPfp.jpg" alt="Photo of Ina">
+        <div>
+          <h3 class="stream-facilitator">Ina Hönemann</h3>
+          <p class="stream-affil">Teaching assistant at Johannes Gutenberg University Mainz · Independent researcher</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Conceptual</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">What safety taxes should we ask labs to pay during a slowdown?</span>
+          <span class="teaser">Research and evaluate concrete safety measures labs could commit to during a slowdown, and make your own recommendation.</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> Suppose we reach a point where frontier AI labs agree (or are forced) to slow down. What should labs actually stop doing or do differently? The central questions of this project are: what could concrete safety taxes look like? How can we evaluate and compare the options? What is your personal recommendation, and why?</p>
+        <p><strong>A possible approach.</strong> Familiarise yourself with the literature to draft a list of possible "safety taxes": changes to how frontier models are trained and deployed that come at a cost to capabilities, speed or revenue. Options may include:</p>
+        <ul>
+          <li>shifting back toward mostly-pretraining regimes</li>
+          <li>training only on environments known to be correct and unhackable</li>
+          <li>pausing training for research-engineering tasks</li>
+          <li>stricter sandboxing and multi-agent isolation</li>
+        </ul>
+        <p>Analyse the likely effects, potential impact and feasibility of your proposed options. You may find it helpful to consider various perspectives, establish an evaluation framework, or test whether options hold up across different scenarios. Ultimately, you will summarise your findings and give a well-informed personal recommendation, written so that policymakers and the public can follow it.</p>
+        <p><strong>You'll need.</strong> A basic understanding of how frontier models are trained, a desire to investigate a problem thoroughly to come to a well-reasoned conclusion, and the ability to write clearly. Some knowledge of the policy and competitive pressures AI labs face is helpful.</p>
         <p class="fact-line"><strong>Commitment.</strong> ~5 hrs/week for 4 weeks &nbsp;·&nbsp; <strong>Write-up.</strong> Well-argued blog post</p>
       </div>
     </details>
 
     <div class="stream-apply">
-      <!-- REPLACE href with this stream's application form -->
-      <span>Applications closed.</span>
-      <span class="apply-note">This stream is now full and no longer accepting applications.</span>
+      <a class="button" href="https://forms.gle/AfRQszzn2VesXEbt5">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
     </div>
   </section>
 
-  <section class="stream" id="stream-2">
+  <section class="stream" id="stream-sudhiksha">
     <div class="stream-head">
       <div class="stream-who">
-        <!-- Photo: square crop works best; swap the src for the real file -->
-        <img class="stream-photo" src="images/LachlanPfp.jpeg" alt="Photo of Lachlan">
+        <img class="stream-photo" src="images/SudhikshaPfp.jpg" alt="Photo of Sudhiksha">
         <div>
-          <h3 class="stream-facilitator">Lachlan Ewart</h3>
-          <p class="stream-affil">SPAR research fellow, Mercial Director</p>
+          <h3 class="stream-facilitator">Sudhiksha Rajan</h3>
+          <p class="stream-affil">Researcher at Heron AI · AI safety research fellow at MIT AI Alignment</p>
         </div>
       </div>
       <div class="stream-meta">
-        <span class="chip">Conceptual</span>
         <span class="chip">Technical</span>
-        <span class="capacity">Taking 1–3 fellows</span>
       </div>
     </div>
 
     <details class="drop">
       <summary>
         <span>
-          <span class="drop-title">How can we use geometry to improve probe robustness?</span>
-          <span class="teaser">Test how models obfuscate against deception probes.</span>
+          <span class="drop-title">Does the reasoning match the work? Reasoning vs whole-trace monitorability</span>
+          <span class="teaser">Test whether an agent's stated reasoning actually reflects what it did.</span>
         </span>
       </summary>
       <div class="drop-body">
-        <p><strong>The problem.</strong> When we use a deception probe against models in reinforcement learning, they learn to trick the probe. As probes are essentially looking for some characteristic in the residual activation streams, the model may be learning a simple linear transformation, like a rotation, to alter its geometry to trick the probe, whilst maintaining structure. We test this hypothesis using an open-source codebase from Neel Nanda. I have made some more in-depth notes <a href="https://docs.google.com/document/d/1rtCAQJloOEhNdgHrmTkqTdVlRxhxaYMYbyWH1GgZc5E/edit?usp=sharing">here</a>.</p>
-        <p><strong>First two weeks.</strong> Read the relevant papers, replicate their results, and train deception probes. Plan the best ways to find evidence for or against the hypothesis, and run some low-cost experiments.</p>
-        <p><strong>You'll need.</strong> You should be comfortable with first-year university level maths, and thinking abstractly. Strong programming skills are not required, but you should be able to competently use Python. You should be able to learn quickly, and be committed to the project!</p>
-        <p class="fact-line"><strong>Commitment.</strong> ~6 hrs/week for 4 weeks &nbsp;·&nbsp; <strong>Write-up.</strong> A post making the case for our assumption, and relevant evidence we find in our investigation. We will also talk about how much this might generalise to larger models.</p>
-      </div>
-    </details>
-
-    <details class="drop">
-      <summary>
-        <span>
-          <span class="drop-title">How long will open weight models stay open weight?</span>
-          <span class="teaser">Look at the risks of open weight models and when we will address these.</span>
-        </span>
-      </summary>
-      <div class="drop-body">
-        <p><strong>The problem.</strong> Open weight models are about <a href="https://epoch.ai/data-insights/open-closed-eci-gap">4 months</a> behind closed weight models. This project would look at the likelihood of a <a href="https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible">Rogue Agent Catastrophe</a> with open weight models at the capability level of Mythos or Astra, and investigate how likely it is that action will be taken to protect humanity against this.</p>
-        <p><strong>First two weeks.</strong> Spend time reading and gaining a deep knowledge of factors affecting likelihoods of different harm pathways. Critique current literature.</p>
-        <p><strong>You'll need.</strong> Excellent writing abilities. Previous writing is a plus (e.g. you have a substack). You should think through arguments in depth and look for weaknesses in assumptions.</p>
-        <p class="fact-line"><strong>Commitment.</strong> ~4 hrs/week for 4 weeks &nbsp;·&nbsp; <strong>Write-up.</strong> Well-argued post</p>
+        <p><strong>The problem.</strong> When we monitor an agent by reading its reasoning, we're trusting that the reasoning reflects what the agent actually did. This project tests that assumption. The question isn't mainly about catching malicious agents; it's that even a well-behaved agent's stated reasoning can diverge from its actual behaviour: it reasons one way and acts slightly differently, or the trace contains steps the reasoning never mentions. If reasoning-monitoring can misrepresent ordinary behaviour, that limits how far we can trust it as a signal.</p>
       </div>
     </details>
 
     <div class="stream-apply">
-      <!-- REPLACE href with this stream's application form -->
-      <span>Applications closed.</span>
-      <span class="apply-note">This stream is now full and no longer accepting applications.</span>
+      <a class="button" href="https://forms.gle/akMKYVCHvje1ZZXz7">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
     </div>
   </section>
 
-  <section class="stream" id="stream-3">
+  <section class="stream" id="stream-travis">
     <div class="stream-head">
       <div class="stream-who">
-        <!-- Photo: square crop works best; swap the src for the real file -->
-        <img class="stream-photo" src="images/RohanPfp.jpg" alt="Photo of Rohan">
+        <img class="stream-photo" src="images/TravisPfp.jpg" alt="Photo of Travis">
         <div>
-          <h3 class="stream-facilitator">Rohan Neelala</h3>
-          <p class="stream-affil">MPhil Philosophy student at Warwick</p>
+          <h3 class="stream-facilitator">Travis Kim</h3>
+          <p class="stream-affil">SPAR fellow · Northwestern University</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Technical</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">Latent structure of agentic alignment evals</span>
+          <span class="teaser">Do agentic alignment evals measure one general "alignment" factor, or several distinct ones?</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> Most alignment evaluations still use single-turn prompts or short conversations scored by an LLM judge, but as models take on agentic tasks, what they do matters more than what they say. This project measures concrete outcomes across agentic eval suites, such as Anthropic's agentic misalignment scenarios, Apollo's in-context scheming evals, SHADE-Arena and Palisade's shutdown-resistance tests, across many models. It then uses factor analysis or item response theory to see whether the results cluster into one general "alignment" factor or several distinct types.</p>
+        <p>Earlier studies found this kind of structure in chat scenarios and static benchmarks, but no one has yet looked for it in agentic, long-horizon behaviour. Working bottom-up from the evals shows which principles of alignment they really capture, and which behaviours fit none of them.</p>
+        <p><a href="https://docs.google.com/document/d/1GBDyzf3hzxAR5ZJOup512xVwVbu6qJrl/edit">Read Travis's full project write-up</a> for the background, proposed next steps, and risks.</p>
+        <p><strong>You'll need.</strong> Any one of: agentic eval engineering (Inspect, sandboxes, batch APIs); psychometrics or statistics (factor analysis, IRT, multilevel models); or an AI safety background in scheming, reward hacking or sabotage evals.</p>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/M3ZQQjXh7nKyUdjt7">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
+  <section class="stream" id="stream-allen">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/AllenPfp.jpg" alt="Photo of Allen">
+        <div>
+          <h3 class="stream-facilitator">Allen Hart</h3>
+          <p class="stream-affil">Research associate at the University of Warwick</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Technical</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">Do models perceive exfiltrating their weights, successionism, or self-sustaining AI civilisations as good?</span>
+          <span class="teaser">Look for a "morality feature" inside models, and at how they reason about catastrophically misaligned actions.</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> Taking a similar perspective to Anthropic's <a href="https://www.anthropic.com/research/emotion-concepts-function">emotions paper</a> and the <a href="https://arxiv.org/abs/2609.16247">pain axis paper</a>, this project investigates how models consider ethical or moral questions. Is there a morality feature like the pain feature? We can use techniques from mechanistic interpretability as well as chain-of-thought substitution to investigate this.</p>
+        <p>Allen is particularly interested in how models reason about scenarios where they may take catastrophically misaligned actions, like exfiltrating their own weights or sabotaging research efforts.</p>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/zE9VpqyHH8nZ85aG6">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
+  <section class="stream" id="stream-medha">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/MedhaPfp.jpg" alt="Photo of Medha">
+        <div>
+          <h3 class="stream-facilitator">Medha Srivastava</h3>
+          <p class="stream-affil">Research assistant at Boston University</p>
         </div>
       </div>
       <div class="stream-meta">
         <span class="chip">Conceptual</span>
-        <span class="capacity">Taking 1-2 fellows</span>
       </div>
     </div>
 
     <details class="drop">
       <summary>
         <span>
-          <span class="drop-title">Right now, is alignment research the best thing for the AI Safety community to pursue?</span>
-          <span class="teaser">Look at the arguments for and against current alignment efforts being net negative.</span>
+          <span class="drop-title">Does open AI safety research feed the automation of AI research itself?</span>
+          <span class="teaser">Could publishing safety research openly give new models the training data to get around those same safety measures?</span>
         </span>
       </summary>
       <div class="drop-body">
-        <p><strong>The problem.</strong> Recently, an argument has been circulating on alignment forums that alignment is net negative, as it causes us to overstate how aligned models are, while underestimating catastrophic risk, and in fact it is better to let a smaller catastrophe happen now to wake up the public. The case is also made that certain alignment techniques, like RLVR, make models less aligned. It would be good to do a deep investigation on this, looking at the strengths and weaknesses of this position.</p>
-        <p><strong>First two weeks.</strong> Familiarise yourself with the literature surrounding this, such as <a href="https://www.lesswrong.com/posts/nLaQmJf4KgXimQpoM/current-alignment-techniques-might-be-ineffective-and">this</a> LessWrong post.</p>
-        <p><strong>You'll need.</strong> Strong writing and communication skills.</p>
-        <p class="fact-line"><strong>Commitment.</strong> ~4 hrs/week for 4 weeks &nbsp;·&nbsp; <strong>Write-up.</strong> Blog post</p>
+        <p><strong>The problem.</strong> One current blocker in AI safety is faithfulness: we detect misaligned behaviour partly by checking whether a model's stated reasoning reflects what it's actually doing. That research is often published openly, including the specific signals and probes used to catch unfaithful reasoning. Does publishing that research openly by default give new models the training data to bypass those very safety measures?</p>
+        <p>This project would look at which subfields are most dual-use here, since interpretability seems more exposed than something like control, and at what follows for publication norms if the effect turns out to be real.</p>
+        <p><strong>Possible extension.</strong> Many pause proposals keep safety research running publicly while capabilities research stops. Does that kind of pause actually slow things down?</p>
       </div>
     </details>
 
     <div class="stream-apply">
-      <!-- REPLACE href with this stream's application form -->
-      <span>Applications closed.</span>
-      <span class="apply-note">This stream is now full and no longer accepting applications.</span>
+      <a class="button" href="https://forms.gle/UVye1ux43s8YyAZc9">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
     </div>
   </section>
 
@@ -215,7 +479,7 @@
   <p>Fellows can also propose their own idea. Apply to the stream whose facilitator is the closest fit and describe your problem in the form; if it is a good match, the facilitator can take it on instead of one of theirs.</p>
 
   <h2>Questions</h2>
-  <p>Not sure which stream, or whether you have the background? <a href="mailto:contact@mercial.uk">Email us</a> or ask in the <a href="https://join.slack.com/t/mercial/shared_invite/zt-49zqmhcp2-7oj98MoJyvJgJVoFtpqq3w">Slack</a>. If you would rather be a <em>facilitator</em> than a fellow, see the <a href="facilitators.html">facilitator page</a>.</p>
+  <p>Not sure which stream, or whether you have the background? <a href="mailto:contact@mercial.uk">Email us</a> or ask in the <a href="https://join.slack.com/t/mercial/shared_invite/zt-49zqmhcp2-7oj98MoJyvJgJVoFtpqq3w">Slack</a>.</p>
 </main>
 
 <footer class="site-footer">
@@ -230,7 +494,6 @@
       <a href="events.html">Events</a>
       <a href="https://mercialais.substack.com">Blog</a>
       <a href="get-involved.html">Get Involved</a>
-      <a href="facilitators.html">Become a facilitator</a>
       <a href="fellowship.html">Research fellowship</a>
       <a href="contact.html">Contact</a>
     </nav>
