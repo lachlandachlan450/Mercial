@@ -612,6 +612,48 @@
     </div>
   </section>
 
+  <section class="stream" id="stream-aditya">
+    <div class="stream-head">
+      <div class="stream-who">
+        <img class="stream-photo" src="images/AdityaPfp.jpg" alt="Photo of Aditya">
+        <div>
+          <h3 class="stream-facilitator">Aditya Sarna</h3>
+          <p class="stream-affil">SPAR Fellow ’26 · Google Summer of Code ’26</p>
+        </div>
+      </div>
+      <div class="stream-meta">
+        <span class="chip">Technical</span>
+        <span class="capacity">Taking 2–4 fellows</span>
+      </div>
+    </div>
+
+    <details class="drop">
+      <summary>
+        <span>
+          <span class="drop-title">Persistent memory and delayed cross-domain attacks in multi-agent LLM systems</span>
+          <span class="teaser">Measuring how delay between a memory write and its downstream effect shapes unsafe behaviour and detection.</span>
+        </span>
+      </summary>
+      <div class="drop-body">
+        <p><strong>The problem.</strong> Persistent memory in multi-agent LLM systems allows information written by one agent in one session to influence another agent much later, potentially in a seemingly unrelated domain. This challenges conventional safety evaluations, which typically inspect individual prompts, responses, or sessions in isolation. As memory accumulates and unrelated interactions intervene, unsafe behaviour may emerge far from its original cause, making its source harder to trace and existing safeguards less effective.</p>
+        <p><strong>Why this matters.</strong></p>
+        <ul>
+          <li><em>Cross-agent and cross-domain risks:</em> one agent's stored information can shape another agent's behaviour in a different task or domain.</li>
+          <li><em>Delayed activation:</em> unsafe behaviour may emerge long after the original information was written, in a context that appears unrelated.</li>
+          <li><em>Limitations of existing safeguards:</em> per-prompt, per-response, and per-session checks may miss risks that only emerge across time and agents.</li>
+        </ul>
+        <p><strong>Research focus.</strong> The project treats delay as a controlled variable, measuring how the number of intervening sessions and memory writes affects unsafe-behaviour rates and the ability of existing safeguards to detect these effects.</p>
+        <p><strong>Scope.</strong> The project is designed to fit within the one-month fellowship. There is also an opportunity to develop the work into a research paper if fellows want to continue beyond the fellowship, but willingness to make this additional commitment will not affect selection.</p>
+        <p class="fact-line"><strong>Write-up.</strong> A Mercial blog post documenting the testing methodology and initial results</p>
+      </div>
+    </details>
+
+    <div class="stream-apply">
+      <a class="button" href="https://forms.gle/28LnJDTN3Kqbyj357">Apply to this stream</a>
+      <span class="apply-note">Applications close Wednesday 28 October.</span>
+    </div>
+  </section>
+
   <h2>Have your own problem?</h2>
   <p>Fellows can also propose their own idea. Apply to the stream whose facilitator is the closest fit and describe your problem in the form; if it is a good match, the facilitator can take it on instead of one of theirs.</p>
 
