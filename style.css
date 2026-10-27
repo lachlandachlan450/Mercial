@@ -470,6 +470,8 @@ p, ul, ol { max-width: var(--measure); }
   font-size: 1.2rem;
   color: var(--aubergine-deep);
 }
+.stream-photos { display: flex; flex: none; }
+.stream-photos .stream-photo + .stream-photo { margin-left: -1rem; box-shadow: 0 0 0 3px #fff; }
 .stream-facilitator { font-family: var(--font-display); font-size: 1.4rem; margin: 0; }
 .stream-affil { margin: 0.25rem 0 0; font-size: 0.95rem; color: #4a3f57; }
 .stream-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; max-width: 16rem; }
